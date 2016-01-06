@@ -9,6 +9,7 @@
 LRESULT CALLBACK WndProc(HWND,UINT,WPARAM, LPARAM);
 HINSTANCE g_hInst;
 HWND hWndMain;
+HACCEL hAccel; // acc
 
 LPCTSTR lpszClass=TEXT("Key");
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
@@ -39,9 +40,13 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
 	ShowWindow(hWnd, nCmdShow);
 	hWndMain = hWnd;
 
+	hAccel = LoadAccelerators(hInstance, MAKEINTRESOURCE(ID_ACCELERATOR40004)); // accelator load
 	while(GetMessage(&Message,0,0,0) ) {
-		TranslateMessage(&Message);
-		DispatchMessage(&Message);
+		if(!TranslateAccelerator(hWnd, hAccel, &Message)) // accelator에 기술된 키 들어오면 true 리턴해서 아래 구문으로 안들어가게함
+		{
+			TranslateMessage(&Message);
+			DispatchMessage(&Message);
+		}
 	}
 	return Message.wParam;
 }

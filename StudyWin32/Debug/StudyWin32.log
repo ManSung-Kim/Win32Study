@@ -1,12 +1,11 @@
-﻿빌드 시작: 2016-01-06 오후 9:03:02
+﻿빌드 시작: 2016-01-06 오후 11:06:39
      1>2 노드의 "C:\Users\KIMMANSUNG-NOTE\documents\visual studio 2010\Projects\StudyWin32\StudyWin32\StudyWin32.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\StudyWin32.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Menu.cpp
-         Menu.cpp
-       ResourceCompile:
          모든 출력이 최신 상태입니다.
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\Menu.res" Menu.rc 
        ManifestResourceCompile:
          모든 출력이 최신 상태입니다.
        Link:
@@ -26,4 +25,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:03.77
+경과 시간: 00:00:02.21
