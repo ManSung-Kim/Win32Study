@@ -1,23 +1,21 @@
-﻿빌드 시작: 2015-12-28 오후 11:09:41
+﻿빌드 시작: 2016-01-04 오후 9:34:10
      1>2 노드의 "c:\Users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\StudyWin32\StudyWin32.vcxproj" 프로젝트(build 대상)입니다.
-     1>PrepareForBuild:
-         "c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\" 디렉터리를 만들고 있습니다.
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\StudyWin32.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TextIn.cpp
          TextIn.cpp
+     1>c:\users\kimmansung-note\documents\visual studio 2010\projects\studywin32\studywin32\textin.cpp(50): warning C4101: 'len' :참조되지 않은 지역 변수입니다.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\StudyWin32.exe.embed.manifest.res" Debug\StudyWin32_manifest.rc 
+         모든 출력이 최신 상태입니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\StudyWin32.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.lib" /MACHINE:X86 Debug\StudyWin32.exe.embed.manifest.res
          Debug\TextIn.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\StudyWin32.exe.embed.manifest" /manifest Debug\StudyWin32.exe.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\StudyWin32.exe.embed.manifest.res" Debug\StudyWin32_manifest.rc 
+         모든 출력이 최신 상태입니다.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\StudyWin32.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.lib" /MACHINE:X86 Debug\StudyWin32.exe.embed.manifest.res
-         Debug\TextIn.obj
+         모든 출력이 최신 상태입니다.
          StudyWin32.vcxproj -> c:\users\kimmansung-note\documents\visual studio 2010\Projects\StudyWin32\Debug\StudyWin32.exe
        FinalizeBuildStatus:
          "Debug\StudyWin32.unsuccessfulbuild" 파일을 삭제하고 있습니다.
@@ -26,4 +24,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:05.91
+경과 시간: 00:00:01.51

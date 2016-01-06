@@ -50,10 +50,37 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	int len;
 	switch(iMessage) {
 	case WM_CHAR:
-		len = lstrlen(str);
+		/*len = lstrlen(str);
 		str[len] = TCHAR(wParam);
 		str[len+1]=0;
-		InvalidateRect(hWnd,NULL,FALSE);
+		InvalidateRect(hWnd,NULL,FALSE);*/
+		{
+			
+			HDC hScreenDC = CreateDC(TEXT("DISPLAY"), NULL,NULL,NULL);
+			HDC hMemoryDC = CreateCompatibleDC(hScreenDC);
+			int x = GetDeviceCaps(hScreenDC, HORZRES);
+			int y = GetDeviceCaps(hScreenDC, VERTRES);
+			HBITMAP hBitmap = CreateCompatibleBitmap(hScreenDC,x,y);
+			HBITMAP hOldBitmap = (HBITMAP)SelectObject(hMemoryDC, hBitmap);
+			BitBlt(hMemoryDC, 0, 0, x,y, hScreenDC, 0,0, SRCCOPY);
+
+			//hBitmap = (HBITMAP)SelectObject(hMemoryDC, hOldBitmap);
+
+			//wprintf("%d %d\n",x,y);
+			//			
+			hdc=BeginPaint(hWnd,&ps);
+			BitBlt(hdc, 0, 0, x,y, hMemoryDC, 0,0, SRCCOPY);
+			DeleteDC(hdc);
+			EndPaint(hWnd,&ps);
+
+			hBitmap = (HBITMAP)SelectObject(hMemoryDC, hOldBitmap);
+
+			DeleteDC(hMemoryDC);
+			DeleteDC(hScreenDC);
+
+			
+
+		}
 		return 0;
 	case WM_PAINT:
 		hdc=BeginPaint(hWnd,&ps);
