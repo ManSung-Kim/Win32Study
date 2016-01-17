@@ -30,7 +30,10 @@
     <ClCompile Include="MyButton.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MyCheckBox_Radio.cpp">
+    <ClCompile Include="MyCheckBox.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Edit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
