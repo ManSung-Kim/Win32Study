@@ -68,7 +68,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		//BitBlt(hdc,0,0, 100,100,MemDC,0,0,SRCCOPY); 
 		BitBlt(hdc,0,0, 100,100,MemDC,0,0,MERGECOPY); // 원본크기대로 복사수행
 		BitBlt(hdc,100,100, 100,200,MemDC,0,0,MERGECOPY); // 겹쳐서 또 그림
-		StretchBlt(hdc,300,300,100,300,MemDC,0,0,500,500,MERGECOPY); // 복사될 크기 정해서 복사수행
+		//StretchBlt(hdc,300,300,100,300,MemDC,0,0,500,500,MERGECOPY); // 복사될 크기 정해서 복사수행
 			// bitblt는 DC간 고속복사 수행함.
 			// hdc, stX,stY,edX,edY
 			// hdcSrc(MemDC) : hdc로 복사하고자하는 back DC
